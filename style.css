@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #24292f;
+    color: white;
+}
+header h1 {
+    margin: 0 0 10px;
+}
+header p {
+    margin: 0;
+}
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #0969da;
+    color: white;
+    font-size: 16px;
+}
+button:hover {
+    opacity: 0.9;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+#results {
+    display: grid;
+    grid-template-colu mns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.card p {
+    color: #555;
+    line-height: 1.5;
+}
+.info {
+    margin: 10px 0;
+}
+.view-button {
+    width: 100%;
+    margin-top: 10px;
+}
+#message {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+}
+.modal-content {
+    background: white;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+}
+.close-button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px 12px;
+    font-size: 24px;
+}

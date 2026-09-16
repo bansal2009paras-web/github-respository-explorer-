@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GitHub Repository Explorer</h1>
+        <p>Discover repositories on GitHub</p>
+    </header>
+    <main>
+        <form id="searchForm">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search repositories...">
+            <button type="submit">Search</button>
+        </form>
+        <div class="controls">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect">
+                <option value="stars">Stars</option>
+                <option value="updated">Recently Updated</option>
+                <option value="name">Name</option>
+            </select>
+        </div>
+        <p id="message"></p>
+        <section id="results"></section>
+    </main>
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <button id="closeModal" class="close-button">
+            </button>
+            <div id="details"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
